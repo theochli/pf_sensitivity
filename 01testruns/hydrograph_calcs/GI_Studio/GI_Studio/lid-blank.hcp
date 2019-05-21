@@ -1,0 +1,16 @@
+[HydroCAD]
+FileUnits=English
+CalcUnits=English
+InputUnits=English
+ReportUnits=English
+LargeAreas=False
+Source=HydroCAD® 10.00-18  s/n M11130  © 2016 HydroCAD Software Solutions LLC
+Name=lid-blank
+Path=C:\Users\Theo\Box Sync\TA\GI_Studio\
+View=0.117414554754709 0.454545454545455 9.88258544524529 9.54545454545454
+TimeSpan=18000 72000
+TimeInc=180
+RunoffMethod=SCS TR-20
+ReachMethod=Stor-Ind+Trans
+PondMethod=Stor-Ind
+UH=SCS

@@ -1,0 +1,31 @@
+program parflowslopes 
+written by Michael Barnes 
+April 2012
+
+This program is free software provided under the terms of the GPL  
+
+This program creates slope input files for ParFlow using three ascii text raster data files exported from GRASS; a DEM, a flow direction grid, and a river file. 
+
+A Makefile is included.  It will work as is with a recent version of gfortran and gnu make, otherwise, editing the compiler flags may be necessary.
+
+To build:
+$> make
+
+To clean up:
+$> make clean
+
+To use:
+1)Use grass_create_location.sh to create a new location for your analysis based on a georeferenced DEM.
+
+$>grass_create_location.sh gisfile $(path to the dem) $(name for location)
+
+2)Edit the parameters in GRASS_slopes.sh.
+  Calculate basin area for rivers in terms of number of cells(THRESHOLD)
+  Decide on minimum slope threshold(MINSLO)
+  Calculate an average slope for your drainage network(RIVSLO)
+  Edit nz and dz to match your model
+
+3)Run GRASS_batch_setup.sh to setup and run GRASS_slopes.sh and parflowslopes
+
+$>GRASS_batch_setup.sh
+

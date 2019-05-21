@@ -1,0 +1,8 @@
+Node 0: Using process grid (1,1,1)
+Node 0: Well Information
+Node 0: No Wells.
+Node 0: Error: Time step failed for time   3.7891e+00.
+Node 0: Shutting down.
+Node 0: Well Information
+Node 0: No Wells.
+Node 0: Problem solved 

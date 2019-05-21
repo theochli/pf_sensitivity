@@ -1,0 +1,119 @@
+*****************************************************************************
+ParFlow Output Log
+	Version        : v3.3.1-26-g7062355
+	Compiled on    : Mar 11 2019 15:05:42
+*****************************************************************************
+==============================================
+BEGIN Log Info (SolverRichards)
+
+Transient Problem Solved.
+-------------------------
+
+Total Timesteps: 7
+
+-------------------------
+Sequence #       Time         \Delta t         Dumpfile #   Recompute?
+----------   ------------   ------------ -     ----------   ----------
+  000000     0.000000e+00   0.000000e+00 i       000000          n
+  000001     1.000000e+00   1.000000e+00 p       000001          y
+  000002     2.000000e+00   1.000000e+00 p       000002          y
+  000003     3.000000e+00   1.000000e+00 p       000003          y
+  000004     3.500000e+00   5.000000e-01 p                       y
+  000005     3.625000e+00   1.250000e-01 p                       y
+  000006     3.718750e+00   9.375000e-02 p                       y
+  000007     3.789062e+00   7.031250e-02 p                       y
+
+Overland flow Results
+  000000     0.000000e+00   0.000000e+00
+  000001     1.000000e+00   1.000000e+00
+  000002     2.000000e+00   1.000000e+00
+  000003     3.000000e+00   1.000000e+00
+  000004     3.500000e+00   5.000000e-01
+  000005     3.625000e+00   1.250000e-01
+  000006     3.718750e+00   9.375000e-02
+  000007     3.789062e+00   7.031250e-02
+
+END Log Info
+==============================================
+==============================================
+BEGIN Log Info (Globals)
+
+Run Name: high_ksat
+Logging Level = 1
+Num processes = 1
+Process grid = (1,1,1)
+
+END Log Info
+==============================================
+==============================================
+BEGIN Log Info (ParFlow Total Time)
+
+Total Run Time: 1.453500 seconds
+
+Maximum memory used on processor 0 : 5 MB
+
+
+BEGIN(Contents of /proc/14100/status)
+Name:	parflow
+Umask:	0022
+State:	R (running)
+Tgid:	14100
+Ngid:	0
+Pid:	14100
+PPid:	14095
+TracerPid:	0
+Uid:	1001	1001	1001	1001
+Gid:	1001	1001	1001	1001
+FDSize:	64
+Groups:	27 1001 
+NStgid:	14100
+NSpid:	14100
+NSpgid:	14100
+NSsid:	9721
+VmPeak:	  316172 kB
+VmSize:	  311008 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   17348 kB
+VmRSS:	   16680 kB
+RssAnon:	    5348 kB
+RssFile:	   11332 kB
+RssShmem:	       0 kB
+VmData:	   22736 kB
+VmStk:	     808 kB
+VmExe:	    3460 kB
+VmLib:	   11760 kB
+VmPTE:	     384 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+Threads:	3
+SigQ:	0/256016
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000000000
+SigCgt:	00000001800004e0
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	0101
+Cpus_allowed_list:	0,8
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	276
+nonvoluntary_ctxt_switches:	16
+
+
+END(Contents of /proc/14100/status)
+
+Memory in use : 3 MB in 236 allocs, 3 MB reserved ( 2 unused)
+
+
+END Log Info
+==============================================

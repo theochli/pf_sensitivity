@@ -1,0 +1,122 @@
+[HydroCAD]
+FileUnits=English
+CalcUnits=English
+InputUnits=English
+ReportUnits=English
+LargeAreas=False
+Source=HydroCAD® 10.00-18  s/n M11130  © 2016 HydroCAD Software Solutions LLC
+Name=LID
+Path=C:\Users\Theo\Box Sync\TA\GI_Studio\
+View=0.561285958867912 0.31210033781102 9.43871404113208 8.57656314772838
+TimeSpan=18000 72000
+TimeInc=72
+RunoffMethod=SCS TR-20
+ReachMethod=Stor-Ind+Trans
+PondMethod=Stor-Ind
+UH=SCS
+StormType=Type III 24-hr
+StormDurat=86400
+StormDepth=0.229166666666667
+
+[NODE]
+Number=1S
+Type=Subcat
+Name=ParkingLot
+XYPos=3.3769102322927 7.02576100869095
+Outflow=3P
+[AREA]
+Area=303133
+CN=98
+Desc=Parking Lot
+[TC]
+Method=Shallow
+Desc=Parking Lot
+Length=862
+Slope=0.001
+Surface=Paved
+Kv=20.3
+
+[NODE]
+Number=5S
+Type=Subcat
+Name=ParkingLot
+XYPos=6.07797340998922 6.98991777810657
+Outflow=6P
+[AREA]
+Area=303133
+CN=98
+Desc=Parking Lot
+[TC]
+Method=Shallow
+Desc=Parking Lot
+Length=862
+Slope=0.001
+Surface=Paved
+Kv=20.3
+
+[NODE]
+Number=3P
+Type=Pond
+Name=Rain Garden
+XYPos=3.35133478472237 4.3914899089467
+Message=[82] Warning: Early inflow requires earlier time span
+[STORAGE]
+Type=Prism
+Height=3
+BotWidth=126
+BotLength=136
+SideZ=1
+[DEVICE]
+Type=Exfilt
+Routing=Discarded
+Velocity=2.31481481481481E-5
+AreaType=Wetted
+[DEVICE]
+Type=Orifice
+Invert=1.8
+Routing=Primary
+Diam=1
+C=0.6
+Plane=Horiz
+
+[NODE]
+Number=6P
+Type=Pond
+Name=Planter Pond
+XYPos=6.07797340998922 4.5605837771803
+Outflow=10P
+Message=[82] Warning: Early inflow requires earlier time span
+[STORAGE]
+Type=Prism
+Invert=2.5
+Height=1
+BotWidth=126
+BotLength=236
+[DEVICE]
+Type=Exfilt
+Routing=Primary
+Velocity=6.94444444444444E-5
+AreaType=Wetted
+
+[NODE]
+Number=10P
+Type=Pond
+Name=Media
+XYPos=6.09911014351842 2.51032062484786
+Message=[82] Warning: Early inflow requires earlier time span
+[STORAGE]
+Type=Prism
+OpenSpace=0.6
+Height=2.5
+BotWidth=126
+BotLength=236
+[DEVICE]
+Type=Exfilt
+Routing=Discarded
+Velocity=2.31481481481481E-5
+[DEVICE]
+Type=Orifice
+Routing=Primary
+Diam=0.5
+C=0.6
+Plane=Horiz

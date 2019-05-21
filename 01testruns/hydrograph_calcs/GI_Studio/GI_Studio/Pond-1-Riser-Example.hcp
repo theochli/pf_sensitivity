@@ -1,0 +1,136 @@
+[HydroCAD]
+FileUnits=English
+CalcUnits=English
+InputUnits=English
+ReportUnits=English
+Source=HydroCAD® 7.10  s/n 000438  © 2005 HydroCAD Software Solutions LLC
+Name=Pond-1-Riser-Example
+Path=C:\Hcw\Projects\
+View=-1.5436836137964 3.61322055137844 5.303082110037 7.8421052631579
+TimeSpan=36000 86400
+TimeInc=180
+RunoffMethod=SCS TR-20
+ReachMethod=Stor-Ind+Trans
+PondMethod=Stor-Ind
+UH=SCS
+StormType=Type II 24-hr
+StormDurat=86400
+StormDepth=0.25
+P2=0.175
+
+[NODE]
+Number=11S
+Type=Subcat
+Name=Sample Subcat
+XYPos=-0.0877192982456136 6.84210526315789
+Outflow=1P
+LargeAreas=True
+[AREA]
+Area=544500
+CN=58
+CNindex=79B
+Desc=Woods/grass comb., Good, HSG B
+[AREA]
+Area=1524600
+CN=65
+CNindex=78B
+Desc=Woods/grass comb., Fair, HSG B
+[AREA]
+Area=1132560
+CN=60
+CNindex=81B
+Desc=Woods, Fair, HSG B
+[TC]
+Method=Sheet
+Desc=Segment ID: AB
+Length=100
+Slope=0.025
+Surface=Woods: Light underbrush
+n=0.4
+[TC]
+Method=Shallow
+Desc=Segment ID: BC
+Length=350
+Slope=0.015
+Surface=Unpaved
+Kv=16.1
+[TC]
+Method=Parabol
+Desc=Grassed Swale
+Length=321
+Slope=0.0125
+n=0.025
+Width=4
+Depth=1.5
+
+[NODE]
+Number=1P
+Type=Pond
+Name=Riser Example
+XYPos=3.84711779448622 5.28822055137845
+Outflow=3R
+Outflow=4R
+Shape=Conic
+[STAGE]
+Elev=50
+Area=4000
+[STAGE]
+Elev=52.5
+Area=8000
+[STAGE]
+Elev=53
+Area=12000
+[STAGE]
+Elev=55
+Area=20000
+[STAGE]
+Elev=57
+Area=34000
+[DEVICE]
+Type=Culvert
+Desc=Culvert Barrel
+Routing=Primary
+Invert=50
+Diam=2
+n=0.013
+nDesc=Concrete pipe, bends & connections
+Length=12
+OutletInvert=49.6
+Entrance=RCP, groove end projecting
+Ke=0.2
+CC=0.9
+[DEVICE]
+Type=Orifice
+Desc=Side Opening A
+Routing=Device 1
+Invert=51
+DischMult=2
+Diam=0.333333333333333
+C=0.6
+Plane=Vert
+[DEVICE]
+Type=Orifice
+Desc=Side Opening B
+Routing=Device 1
+Invert=52
+DischMult=4
+Diam=0.333333333333333
+C=0.6
+Plane=Vert
+[DEVICE]
+Type=Orifice
+Desc=Side Opening C
+Routing=Device 1
+Invert=53.5
+DischMult=6
+Diam=0.333333333333333
+C=0.6
+Plane=Vert
+[DEVICE]
+Type=Orifice
+Desc=Top of Riser
+Routing=Device 1
+Invert=55
+Diam=4
+C=0.6
+Plane=Horiz
